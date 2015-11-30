@@ -1,0 +1,813 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/root_container_padding"
+    android:paddingRight="@dimen/root_container_padding"
+    tools:context="pl.marcinwroblewski.zs6sobieski.Kierunki"
+    android:background="@color/white"
+    android:id="@+id/root_container">
+
+
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="KIERUNKI"
+        style="@style/activity_title"
+        />
+
+
+    <ScrollView
+        android:layout_below="@id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/main_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/content1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/minor_text_padding"
+                android:text="@string/kierunki_content1"
+                android:textSize="@dimen/title_text"
+                android:textColor="@color/white"
+                android:background="@color/orange"
+                />
+
+            <LinearLayout
+                android:id="@+id/content_holder1"
+                android:layout_below="@id/content1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/kierunki_content_holder">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_height_tablet"
+                    style="@style/kierunki_img"
+                    android:src="@drawable/dziennikarsko_medialna"/>
+
+
+                <TextView
+                    android:id="@+id/content2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kierunki_content2"
+                    style="@style/kierunki_kierunek_name"
+                    />
+
+                <TextView
+                    android:id="@+id/content3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kierunki_content3"
+                    style="@style/kierunki_kierunek_desc"/>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_below="@id/content_holder1"
+                android:id="@+id/content_holder2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/kierunki_content_holder">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_height_tablet"
+                    android:src="@drawable/biochemiczno_lingwinistyczna"
+                    style="@style/kierunki_img"/>
+
+
+                <TextView
+                    android:id="@+id/content4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kierunki_content4"
+                    style="@style/kierunki_kierunek_name"/>
+
+                <TextView
+                    android:id="@+id/content5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/content4"
+                    android:text="@string/kierunki_content5"
+                    style="@style/kierunki_kierunek_desc"/>
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/content_holder3"
+                android:layout_below="@id/content_holder2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/kierunki_content_holder">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_height_tablet"
+                    android:src="@drawable/translatorsko_prawna"
+                    style="@style/kierunki_img"/>
+
+                <TextView
+                    android:id="@+id/content6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kierunki_content6"
+                    style="@style/kierunki_kierunek_name"/>
+
+                <TextView
+                    android:id="@+id/content7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/content6"
+                    android:text="@string/kierunki_content7"
+                    style="@style/kierunki_kierunek_desc"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_below="@id/content_holder3"
+                android:id="@+id/content_holder4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/kierunki_content_holder">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_height_tablet"
+                    android:src="@drawable/medyczna"
+                    style="@style/kierunki_img"/>
+
+                <TextView
+                    android:id="@+id/content8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kierunki_content8"
+                    style="@style/kierunki_kierunek_name"/>
+
+                <TextView
+                    android:id="@+id/content9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/content8"
+                    android:text="@string/kierunki_content9"
+                    style="@style/kierunki_kierunek_desc"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/content10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/content_holder4"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:padding="@dimen/minor_text_padding"
+                android:text="@string/kierunki_content10"
+                android:textSize="@dimen/title_text"
+                android:textColor="@color/white"
+                android:background="@color/orange"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/content_holder5"
+                android:layout_below="@id/content10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                style="@style/kierunki_content_holder">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_height_tablet"
+                    android:src="@drawable/analityk"
+                    style="@style/kierunki_img"/>
+
+
+                <TextView
+                    android:id="@+id/content11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kierunki_content11"
+                    style="@style/kierunki_kierunek_name"/>
+
+                <TextView
+                    android:id="@+id/content12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/content11"
+                    android:text="@string/kierunki_content12"
+                    style="@style/kierunki_kierunek_desc"/>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/content_holder6"
+                android:layout_below="@id/content_holder5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/control_height"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_height_tablet"
+                    android:src="@drawable/elektryk"
+                    style="@style/kierunki_img"/>
+
+                <TextView
+                    android:id="@+id/content13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kierunki_content13"
+                    style="@style/kierunki_kierunek_name"/>
+
+                <TextView
+                    android:id="@+id/content14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/content13"
+                    android:text="@string/kierunki_content14"
+                    style="@style/kierunki_kierunek_desc"/>
+
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/content_holder7"
+                android:layout_below="@id/content_holder6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/kierunki_content_holder"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_height_tablet"
+                    android:src="@drawable/gornik"
+                    style="@style/kierunki_img"/>
+
+
+                <TextView
+                    android:id="@+id/content15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kierunki_content15"
+                    style="@style/kierunki_kierunek_name"/>
+
+                <TextView
+                    android:id="@+id/content16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/content15"
+                    android:text="@string/kierunki_content16"
+                    style="@style/kierunki_kierunek_desc"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_below="@id/content_holder7"
+                android:id="@+id/content_holder8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/kierunki_content_holder">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_height_tablet"
+                    android:src="@drawable/informatyk"
+                    style="@style/kierunki_img"/>
+
+
+                <TextView
+                    android:id="@+id/content17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kierunki_content17"
+                    style="@style/kierunki_kierunek_name"/>
+
+                <TextView
+                    android:id="@+id/content18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/content17"
+                    android:text="@string/kierunki_content18"
+                    style="@style/kierunki_kierunek_desc"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_below="@id/content_holder8"
+                android:id="@+id/content_holder9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/kierunki_content_holder">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_height_tablet"
+                    android:src="@drawable/mechatronik"
+                    style="@style/kierunki_img"/>
+
+                <TextView
+                    android:id="@+id/content19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kierunki_content19"
+                    style="@style/kierunki_kierunek_name"/>
+
+                <TextView
+                    android:id="@+id/content20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/content19"
+                    android:text="@string/kierunki_content20"
+                    style="@style/kierunki_kierunek_desc"/>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+    <!--<TextView
+        android:id="@+id/app_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="KIERUNKI"
+        style="@style/activity_title"/>
+
+
+
+    <ScrollView
+        android:layout_below="@id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:id="@+id/content1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/minor_text_padding"
+                android:text="@string/kierunki_content1"
+                android:textSize="@dimen/title_text"
+                android:textColor="@color/white"
+                android:background="@color/orange"
+                />
+
+            <LinearLayout
+                android:id="@+id/content_holder1"
+                android:layout_below="@id/content1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/kierunki_content_holder">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/img_height_tablet"
+                    style="@style/kierunki_img"
+                    android:src="@drawable/dziennikarsko_medialna"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/content2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kierunki_content2"
+                        style="@style/kierunki_kierunek_name"
+                        />
+
+                    <TextView
+                        android:id="@+id/content3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kierunki_content3"
+                        style="@style/kierunki_kierunek_desc"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_below="@id/content_holder1"
+                android:id="@+id/content_holder2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/kierunki_content_holder">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/content4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kierunki_content4"
+                        style="@style/kierunki_kierunek_name"/>
+
+                    <TextView
+                        android:id="@+id/content5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/content4"
+                        android:text="@string/kierunki_content5"
+                        style="@style/kierunki_kierunek_desc"/>
+
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/img_height_tablet"
+                    android:src="@drawable/biochemiczno_lingwinistyczna"
+                    style="@style/kierunki_img"/>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/content_holder3"
+                android:layout_below="@id/content_holder2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/kierunki_content_holder">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/img_height_tablet"
+                    android:src="@drawable/translatorsko_prawna"
+                    style="@style/kierunki_img"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/content6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kierunki_content6"
+                        style="@style/kierunki_kierunek_name"/>
+
+                    <TextView
+                        android:id="@+id/content7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/content6"
+                        android:text="@string/kierunki_content7"
+                        style="@style/kierunki_kierunek_desc"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_below="@id/content_holder3"
+                android:id="@+id/content_holder4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/kierunki_content_holder">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/content8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kierunki_content8"
+                        style="@style/kierunki_kierunek_name"/>
+
+                    <TextView
+                        android:id="@+id/content9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/content8"
+                        android:text="@string/kierunki_content9"
+                        style="@style/kierunki_kierunek_desc"/>
+
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/img_height_tablet"
+                    android:src="@drawable/medyczna"
+                    style="@style/kierunki_img"/>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/content10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/content_holder4"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:padding="@dimen/minor_text_padding"
+                android:text="@string/kierunki_content10"
+                android:textSize="@dimen/title_text"
+                android:textColor="@color/white"
+                android:background="@color/orange"
+                />
+
+            <LinearLayout
+                android:id="@+id/content_holder5"
+                android:layout_below="@id/content10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/kierunki_content_holder">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/img_height_tablet"
+                    android:src="@drawable/analityk"
+                    style="@style/kierunki_img"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/content11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kierunki_content11"
+                        style="@style/kierunki_kierunek_name"/>
+
+                    <TextView
+                        android:id="@+id/content12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/content11"
+                        android:text="@string/kierunki_content12"
+                        style="@style/kierunki_kierunek_desc"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/content_holder6"
+                android:layout_below="@id/content_holder5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/control_height">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/content13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kierunki_content13"
+                        style="@style/kierunki_kierunek_name"/>
+
+                    <TextView
+                        android:id="@+id/content14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/content13"
+                        android:text="@string/kierunki_content14"
+                        style="@style/kierunki_kierunek_desc"/>
+
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/img_height_tablet"
+                    android:src="@drawable/elektryk"
+                    style="@style/kierunki_img"/>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/content_holder7"
+                android:layout_below="@id/content_holder6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/kierunki_content_holder">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/img_height_tablet"
+                    android:src="@drawable/gornik"
+                    style="@style/kierunki_img"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/content15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kierunki_content15"
+                        style="@style/kierunki_kierunek_name"/>
+
+                    <TextView
+                        android:id="@+id/content16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/content15"
+                        android:text="@string/kierunki_content16"
+                        style="@style/kierunki_kierunek_desc"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_below="@id/content_holder7"
+                android:id="@+id/content_holder8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/kierunki_content_holder">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/content17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kierunki_content17"
+                        style="@style/kierunki_kierunek_name"/>
+
+                    <TextView
+                        android:id="@+id/content18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/content17"
+                        android:text="@string/kierunki_content18"
+                        style="@style/kierunki_kierunek_desc"/>
+
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/img_height_tablet"
+                    android:src="@drawable/informatyk"
+                    style="@style/kierunki_img"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_below="@id/content_holder8"
+                android:id="@+id/content_holder9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/kierunki_content_holder">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/img_height_tablet"
+                    android:src="@drawable/mechatronik"
+                    style="@style/kierunki_img"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/content19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kierunki_content19"
+                        style="@style/kierunki_kierunek_name"/>
+
+                    <TextView
+                        android:id="@+id/content20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/content19"
+                        android:text="@string/kierunki_content20"
+                        style="@style/kierunki_kierunek_desc"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>-->
+
+
+</RelativeLayout>

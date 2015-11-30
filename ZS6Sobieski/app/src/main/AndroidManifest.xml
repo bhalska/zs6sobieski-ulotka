@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pl.marcinwroblewski.zs6sobieski" >
+
+    <uses-feature
+        android:name="android.hardware.Sensor"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:largeHeap="true"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SpalshScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Menu"
+            android:label="@string/title_activity_phone_menu"
+            android:parentActivityName=".SpalshScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pl.marcinwroblewski.zs6sobieski.SpalshScreen" />
+        </activity>
+        <activity
+            android:name=".Rekrutacja"
+            android:label="@string/title_activity_rekrutacja"
+            android:parentActivityName=".Menu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pl.marcinwroblewski.zs6sobieski.Menu" />
+        </activity>
+        <activity
+            android:name=".Kierunki"
+            android:label="@string/title_activity_kierunki"
+            android:parentActivityName=".Menu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pl.marcinwroblewski.zs6sobieski.Menu" />
+        </activity>
+        <activity
+            android:name=".Kontakt"
+            android:label="@string/title_activity_kontakt"
+            android:parentActivityName=".Menu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pl.marcinwroblewski.zs6sobieski.Menu" />
+        </activity>
+        <activity
+            android:name=".Osiagniecia"
+            android:label="@string/title_activity_osiagniecia"
+            android:parentActivityName=".Menu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pl.marcinwroblewski.zs6sobieski.Menu" />
+        </activity>
+        <activity
+            android:name=".Kierunki.KierunkiTechnikum"
+            android:label="@string/title_activity_kierunki_technikum"
+            android:parentActivityName=".Kierunki" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Kierunki" />
+        </activity>
+        <activity
+            android:name=".Kierunki.KierunkiLiceum"
+            android:label="@string/title_activity_kierunki_liceum"
+            android:parentActivityName=".Kierunki" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Kierunki" />
+        </activity>
+    </application>
+
+</manifest>

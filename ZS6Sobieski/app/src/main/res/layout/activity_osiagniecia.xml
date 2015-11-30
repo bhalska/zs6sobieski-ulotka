@@ -1,0 +1,292 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/root_container_padding"
+    android:paddingRight="@dimen/root_container_padding"
+    android:id="@id/root_container"
+    tools:context="pl.marcinwroblewski.zs6sobieski.Osiagniecia"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="OSIĄGNIĘCIA"
+        style="@style/activity_title"/>
+
+
+    <ScrollView
+        android:layout_below="@id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/main_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/control_height">
+
+
+
+            <LinearLayout
+                android:id="@+id/content_holder1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_height_tablet"
+                    android:src="@drawable/medal"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:padding="@dimen/control_height"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/content1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:padding="@dimen/text_padding_tablet"
+                        android:gravity="center"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/title_text"
+                        android:text="@string/osiagniecia_content1"
+                        android:textAllCaps="true"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/osiagniecia_content2"
+                        android:padding="@dimen/minor_text_padding"
+                        android:gravity="center"
+                        android:background="@color/light_grey"
+                        android:textSize="@dimen/default_text"
+                        android:textColor="@color/orange"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/content_holder2"
+                android:layout_below="@id/content_holder1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/content3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+
+                        android:padding="@dimen/text_padding_tablet"
+                        android:gravity="center"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/title_text"
+                        android:textAllCaps="true"
+                        android:text="@string/osiagniecia_content3"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:text="@string/osiagniecia_content4"
+                        android:padding="@dimen/minor_text_padding"
+                        android:gravity="center"
+                        android:background="@color/light_grey"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/default_text"/>
+
+                </LinearLayout>
+
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_height_tablet"
+                    android:src="@drawable/devices"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:padding="@dimen/control_height"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/content_holder3"
+                android:layout_below="@id/content_holder2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin">
+
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_height_tablet"
+                    android:src="@drawable/erasmus"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:padding="@dimen/control_height"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/content5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+
+                        android:padding="@dimen/text_padding_tablet"
+                        android:gravity="center"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/title_text"
+                        android:text="@string/osiagniecia_content5"
+
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/content_holder4"
+                android:layout_below="@id/content_holder3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/content6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+
+                        android:padding="@dimen/text_padding_tablet"
+                        android:gravity="center"
+                        android:textColor="@color/dark_grey"
+                        android:background="@color/light_grey"
+                        android:textSize="@dimen/title_text"
+                        android:text="@string/osiagniecia_content6"
+
+                        />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_height_tablet"
+                    android:src="@drawable/najtechnikum"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:padding="@dimen/control_height"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/content_holder5"
+                android:layout_below="@id/content_holder4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin">
+
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_height_tablet"
+                    android:src="@drawable/najliceum"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:padding="@dimen/control_height"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/content7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+
+                        android:padding="@dimen/text_padding_tablet"
+                        android:gravity="center"
+                        android:textColor="@color/dark_grey"
+                        android:background="@color/light_grey"
+                        android:textSize="@dimen/title_text"
+                        android:text="@string/osiagniecia_content7"
+
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

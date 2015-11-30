@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/root_container_padding"
+    android:paddingRight="@dimen/root_container_padding"
+    tools:context="pl.marcinwroblewski.zs6sobieski.Kontakt"
+    android:id="@+id/root_container"
+    android:background="@color/white">
+
+
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="KONTAKT (dotknij ikony, by wykonać akcję)"
+        style="@style/activity_title"/>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_title">
+
+
+        <RelativeLayout
+            android:id="@+id/main_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/control_height">
+
+
+
+            <LinearLayout
+                android:id="@+id/content_holder1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:onClick="navigate">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_height_tablet"
+                    android:layout_weight="1"
+                    android:src="@drawable/miejsce"
+                    android:padding="@dimen/control_height"
+                    android:background="@color/blue"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/kontakt_content1"
+                    android:gravity="center"
+                    android:padding="@dimen/text_padding_tablet"
+                    android:textColor="@color/dark_grey"
+                    android:background="@color/light_grey"
+                    android:lineSpacingExtra="6sp"
+                    android:textSize="@dimen/title_text"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/content_holder2"
+                android:layout_below="@id/content_holder1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:onClick="sendEmail">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/kontakt_content2"
+                    android:gravity="center"
+                    android:padding="@dimen/text_padding_tablet"
+                    android:textColor="@color/dark_grey"
+                    android:background="@color/white"
+                    android:lineSpacingExtra="6sp"
+                    android:textSize="@dimen/title_text"/>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_height_tablet"
+                    android:layout_weight="1"
+                    android:src="@drawable/email"
+                    android:padding="@dimen/control_height"
+                    android:background="@color/blue"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/content_holder3"
+                android:layout_below="@id/content_holder2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:onClick="call">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_height_tablet"
+                    android:layout_weight="1"
+                    android:src="@drawable/phone"
+                    android:padding="@dimen/control_height"
+                    android:background="@color/blue"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/kontakt_content3"
+                    android:gravity="center"
+                    android:padding="@dimen/text_padding_tablet"
+                    android:textColor="@color/dark_grey"
+                    android:background="@color/light_grey"
+                    android:lineSpacingExtra="6sp"
+                    android:textSize="@dimen/title_text"/>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

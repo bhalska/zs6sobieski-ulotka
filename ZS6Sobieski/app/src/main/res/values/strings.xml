@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">ZS6 Sobieski</string>
+
+    <string name="version">Wersja 0.92</string>
+
+
+
+
+
+
+
+
+
+
+    <string name="title_activity_phone_menu">phone_menu</string>
+
+    <string name="rekrutacja_description">Tutaj znajdziesz informacje pomocne przy rekrutacji do Sobieskiego.</string>
+    <string name="kierunki_description">Kierunki proponowane przez naszą szkołę. Którą drogę rozwoju wybierzesz?</string>
+    <string name="kontakt_description">Chcesz się z nami skontaktować? Tutaj znajdują się informacje, które Ci w tym pomogą.</string>
+    <string name="osiagniecia_description">Czy warto wybrać naszą szkołę? Przekonaj się sam przeglądając nasze osiągnięcia.</string>
+
+    <string name="more">WIĘCEJ</string>
+    <string name="title_activity_rekrutacja">Rekrutacja</string>
+
+    <string name="rekrutacja_header_text">Rekrutacja do „Sobieskiego” odbywa się przy pomocy elektronicznego systemu rekrutacji, który znajdziesz <u>tutaj</u>.</string>
+    <string name="rekrutacja_content1">Skrócone zasady punktowania podczas rekrutacji:</string>
+    <string name="rekrutacja_content2">1. Za egzamin gimnazjalny – wyniki egzaminu będą przeliczane według kryteriów:</string>
+    <string name="rekrutacja_content3">Język polski – 0,2 punktu za każdy uzyskany procent</string>
+    <string name="rekrutacja_content4">Historia i wiedza o społeczeństwie – 0,2 punktu za każdy uzyskany procent</string>
+    <string name="rekrutacja_content5">Matematyka – 0,2 punktu za każdy uzyskany procent</string>
+    <string name="rekrutacja_content6">Przedmioty przyrodnicze – 0,2 punktu za każdy uzyskany procent</string>
+    <string name="rekrutacja_content7">Język obcy nowożytny (na poziomie podstawowym)- 0,2 punktu za każdy uzyskany procent</string>
+    <string name="rekrutacja_content8">W rekrutacji brane są pod uwagę wyniki egzaminu gimnazjalnego z zakresu języka
+obcego nowożytnego na poziomie podstawowym.</string>
+    <string name="rekrutacja_content9">2. Za ocenę uzyskaną z j. polskiego i trzech przedmiotów wskazanych dla danej
+klasy – kandydat otrzymuje:</string>
+    <string name="rekrutacja_content10">19 punktów – celujący</string>
+    <string name="rekrutacja_content11">16 punktów – bardzo dobry</string>
+    <string name="rekrutacja_content12">13 punktów – dobry</string>
+    <string name="rekrutacja_content13">9 punktów – dostateczny</string>
+    <string name="rekrutacja_content14">0 punków – dopuszczający.</string>
+    <string name="rekrutacja_content15">3. Za świadectwo ukończenia gimnazjum z wyróżnieniem kandydat uzyskuje
+5 punktów.</string>
+    <string name="rekrutacja_content16">4. Za uzyskanie tytułu finalisty w wojewódzkim lub ponadwojewódzkim konkursie
+przedmiotowym organizowanym przez kuratora oświaty oraz tytułu finalisty w
+Olimpiadzie Matematycznej Gimnazjalistów i Olimpiadzie Języka Angielskiego dla
+Gimnazjalistów kandydat może otrzymać 12 punktów (za jeden tytuł – 10 punktów,
+za dwa i więcej tytułów – dodatkowo 2 punkty).</string>
+    <string name="rekrutacja_content17">5. Za szczególne osiągnięcia w zawodach wiedzy, artystycznych, sportowych
+(indywidualnych lub zespołowych) lub konkursach innych, co najmniej na szczeblu
+powiatowym, wymienionych na świadectwie ukończenia gimnazjum – 5 punktów.</string>
+    <string name="rekrutacja_content18">Za I miejsce lub tytuł laureata – 5 punktów,</string>
+    <string name="rekrutacja_content19">za II miejsce lub tytuł finalisty – 4 punkty,</string>
+    <string name="rekrutacja_content20">za III miejsce lub wyróżnienie – 3 punkty</string>
+    <string name="title_activity_kierunki">Kierunki</string>
+
+
+
+
+
+    <string name="kierunki_content1">IV Liceum Ogólnokształcące o 3-letnim cyklu kształcenia:</string>
+    <string name="kierunki_content2">1a (dziennikarsko-medialna)</string>
+    <string name="kierunki_content3">język polski, historia, wiedza o społeczeństwie</string>
+    <string name="kierunki_content4">1b (biochemiczno-lingwistyczna)</string>
+    <string name="kierunki_content5">biologia, chemia, język angielski</string>
+    <string name="kierunki_content6">1c (translatorska-prawna)</string>
+    <string name="kierunki_content7">język angielski, język francuski lub niemiecki, historia</string>
+    <string name="kierunki_content8">1d (medyczna)</string>
+    <string name="kierunki_content9">biologia, chemia, fizyka</string>
+    <string name="kierunki_content10">Technikum nr 4 o 4-letnim cyklu kształcenia:</string>
+    <string name="kierunki_content11">technik analityk</string>
+    <string name="kierunki_content12">matematyka i chemia</string>
+    <string name="kierunki_content13">technik elektryk</string>
+    <string name="kierunki_content14">matymatyka i fizyka</string>
+    <string name="kierunki_content15">technik górnictwa podziemnego</string>
+    <string name="kierunki_content16">matematyka i geografia</string>
+    <string name="kierunki_content17">technik informatyk</string>
+    <string name="kierunki_content18">matematyka i fizyka</string>
+    <string name="kierunki_content19">technik mechatronik</string>
+    <string name="kierunki_content20">matymatyka i fizyka</string>
+    <string name="title_activity_kontakt">Kontakt</string>
+
+
+
+    <string name="kontakt_content1">Zespół Szkół nr 6 im. Króla Jana III Sobieskiego, <b>ul. Harcerska 12</b>, 44-335 Jastrzębie-Zdrój</string>
+    <string name="kontakt_content2"><i>szkola@zs6sobieski.pl</i></string>
+    <string name="kontakt_content3">(032) 4717264</string>
+    <string name="title_activity_osiagniecia">Osiagniecia</string>
+
+
+
+
+    <string name="osiagniecia_content1">Nagrody w międzynarodowych konkursach</string>
+    <string name="osiagniecia_content2">Belgia, Francja, Niemcy, Korea, Chiny, Brazylia</string>
+    <string name="osiagniecia_content3">Bogate zaplecze techniczne</string>
+    <string name="osiagniecia_content4">Tablety graficzne, sieć bezprzewodowa, platformy testowe, laboratorium chemiczne</string>
+    <string name="osiagniecia_content5">Praktyki zagraniczne dla uczniów oraz działania w zakresie edukacji w ramach projektu "Erasmus+"</string>
+    <string name="osiagniecia_content6"><b>Fundacja Perspektywy potwierdza</b>, że Technikum nr 4 w Zespole Szkół nr 6 im. Króla Jana III Sobieskiego w Jastrzębiu-Zdroju jest wśród 100 <b>najlepszych techników w Polsce</b> i przysługuje mu tytuł Złotej Szkoły 2014 i 2015.</string>
+    <string name="osiagniecia_content7"><b>Fundacja Perspektywy potwierdza</b>, że IV Liceum Ogólnokształcące w Zespole Szkół nr 6 im. Króla Jana III Sobieskiego w Jastrzębiu-Zdroju to <b>najlepsze liceum w naszym mieście</b>. W 2015 roku zajęliśmy 35 miejsce w rankingu liceów w województwie śląskim i jako jedyne liceum zostaliśmy sklasyfikowani w rankingu ogólnopolskim.</string>
+    <string name="title_activity_kierunki_technikum">KierunkiTechnikum</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_kierunki_liceum">KierunkiLiceum</string>
+
+</resources>

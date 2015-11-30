@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <style name="activity_title">
+
+                <item name="android:textAllCaps">true</item>
+                <item name="android:textSize">@dimen/app_title</item>
+                <item name="android:padding">@dimen/text_padding_tablet</item>
+                <item name="android:gravity">right</item>
+                <item name="android:textColor">@color/blue</item>
+                <item name="android:background">@color/white</item>
+
+        </style>
+
+        <style name="kierunki_kierunek_name">
+                <item name="android:gravity">center</item>
+                <item name="android:padding">@dimen/text_padding_tablet</item>
+                <item name="android:textColor">@color/dark_grey</item>
+                <item name="android:background">@color/light_grey</item>
+                <item name="android:textAllCaps">true</item>
+                <item name="android:textSize">@dimen/title_text</item>
+
+        </style>
+</resources>

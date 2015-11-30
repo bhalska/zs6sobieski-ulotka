@@ -1,0 +1,427 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context="pl.marcinwroblewski.zs6sobieski.Menu">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/main_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/control_height">
+
+        <RelativeLayout
+            android:id="@+id/rekrutacja_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/menu_phone_element_bg"
+
+            android:clickable="true"
+            android:onClick="goTo">
+
+
+            <LinearLayout
+                android:id="@+id/rekrutacja_holder2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/rekrutacja_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/rekrutacja"
+                    android:padding="15dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:id="@+id/rekrutacja_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="REKRUTACJA"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:textSize="@dimen/title_text"/>
+
+                    <LinearLayout
+                        android:id="@+id/rekrutacja_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/rekrutacja_title"
+                        android:orientation="horizontal"
+                        android:background="@color/blue" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rekrutacja_line"
+
+                        android:text="@string/rekrutacja_description"
+                        android:textColor="@color/dark_grey"
+                        android:padding="5dp"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:textSize="14sp"
+                        />
+
+                    </RelativeLayout>
+
+
+
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/rekrutacja_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/control_height"
+                android:layout_below="@id/rekrutacja_holder2"
+
+                android:text="@string/more"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="@dimen/title_text"
+                android:background="@color/orange"/>
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/kierunki_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/rekrutacja_holder"
+            android:background="@drawable/menu_phone_element_bg"
+
+            android:clickable="true"
+            android:onClick="goTo">
+
+
+            <LinearLayout
+                android:id="@+id/kierunki_holder2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/kierunki_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="175dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/kierunki"
+                    android:padding="15dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:id="@+id/kierunki_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="KIERUNKI"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:textSize="@dimen/title_text"/>
+
+                    <LinearLayout
+                        android:id="@+id/kierunki_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/kierunki_title"
+                        android:orientation="horizontal"
+                        android:background="@color/blue"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/kierunki_line"
+
+                        android:text="@string/kierunki_description"
+                        android:textColor="@color/dark_grey"
+                        android:padding="5dp"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:textSize="14sp"
+                        />
+
+                </RelativeLayout>
+
+
+
+                />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/kierunki_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/control_height"
+                android:layout_below="@id/kierunki_holder2"
+
+                android:text="@string/more"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title_text"
+                android:background="@color/orange"/>
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/kontakt_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kierunki_holder"
+            android:background="@drawable/menu_phone_element_bg"
+
+            android:clickable="true"
+            android:onClick="goTo">
+
+
+            <LinearLayout
+                android:id="@+id/kontakt_holder2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/kontakt_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="175dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/kontakt"
+                    android:padding="15dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:id="@+id/kontakt_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="KONTAKT"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:textSize="@dimen/title_text"/>
+
+                    <LinearLayout
+                        android:id="@+id/kontakt_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/kontakt_title"
+                        android:orientation="horizontal"
+                        android:background="@color/blue"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/kontakt_line"
+
+                        android:text="@string/kontakt_description"
+                        android:textColor="@color/dark_grey"
+                        android:padding="5dp"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:textSize="14sp"
+                        />
+
+                </RelativeLayout>
+
+
+
+                />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/kontakt_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/control_height"
+                android:layout_below="@id/kontakt_holder2"
+
+                android:text="@string/more"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title_text"
+                android:background="@color/orange"/>
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/osiagniecia_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_phone_element_bg"
+            android:layout_below="@id/kontakt_holder"
+
+            android:clickable="true"
+            android:onClick="goTo">
+
+
+            <LinearLayout
+                android:id="@+id/osiagniecia_holder2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/osiagniecia_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="175dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/osiagniecia"
+                    android:padding="15dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:id="@+id/osiagniecia_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="OSIĄGNIĘCIA"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:textSize="@dimen/title_text"/>
+
+                    <LinearLayout
+                        android:id="@+id/osiagniecia_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/osiagniecia_title"
+                        android:orientation="horizontal"
+                        android:background="@color/blue"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/osiagniecia_line"
+
+                        android:text="@string/osiagniecia_description"
+                        android:textColor="@color/dark_grey"
+                        android:padding="5dp"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:textSize="14sp"
+                        />
+
+                </RelativeLayout>
+
+
+
+                />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/osiagniecia_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/control_height"
+                android:layout_below="@id/osiagniecia_holder2"
+
+                android:text="@string/more"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title_text"
+                android:background="@color/orange"/>
+        </RelativeLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/osiagniecia_holder"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            >
+            <ImageView
+                android:id="@+id/logoZS6"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/logo_height"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+
+                android:src="@drawable/logohorizontal"
+                android:clickable="true"
+                android:onClick="goTo"/>
+
+            <ImageView
+                android:id="@+id/logoB"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/logo_height"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+
+                android:src="@drawable/logobannersmall"
+                android:clickable="true"
+                android:onClick="goTo"/>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>

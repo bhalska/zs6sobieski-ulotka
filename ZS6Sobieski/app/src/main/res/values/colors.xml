@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="blue" type="color">#FF2b80b9</item>
+    <item name="orange" type="color">#FFff8b00</item>
+    <item name="dark_grey" type="color">#FF191919</item>
+    <item name="grey" type="color">#d0d0d0</item>
+    <item name="light_grey" type="color">#FFe2e2e2</item>
+    <item name="white" type="color">#FFffffff</item>
+    <item name="red" type="color">#FFff5e3a</item>
+
+
+</resources>

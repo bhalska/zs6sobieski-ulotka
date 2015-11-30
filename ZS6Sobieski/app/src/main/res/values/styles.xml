@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Light.NoTitleBar">
+
+
+    </style>
+
+
+    <style name="activity_title">
+
+        <item name="android:textSize">@dimen/app_title</item>
+        <item name="android:padding">@dimen/text_padding_tablet</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:background">@color/white</item>
+
+    </style>
+
+
+    <style name="kierunki_content_holder">
+        <item name="android:layout_marginTop">@dimen/activity_vertical_margin</item>
+        <item name="android:orientation">vertical</item>
+
+    </style>
+
+
+    <style name="kierunki_img">
+        <item name="android:padding">@dimen/control_height</item>
+        <item name="android:background">@color/blue</item>
+    </style>
+
+    <style name="kierunki_kierunek_name">
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/text_padding_tablet</item>
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="android:background">@color/light_grey</item>
+        <item name="android:textSize">@dimen/title_text</item>
+
+    </style>
+
+
+    <style name="kierunki_kierunek_desc">
+
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/text_padding_tablet</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textSize">@dimen/title_text</item>
+
+    </style>
+
+
+
+</resources>
